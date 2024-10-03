@@ -41,13 +41,14 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10%;
-  padding: 1% 4%;
+  margin-right: 12%;
+  padding: 0;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
 
 .active {
@@ -55,9 +56,9 @@ nav ul li a {
 }
 
 .dropdown-menu li a {
-  display: flex; /* Display links as blocks for vertical stacking */
-  padding: 0.5rem 1rem; /* Add spacing between links */
-  text-decoration: none; /* Remove underlines from links */
+  display: flex;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
   color: var(--backColor);
   width: 50%;
   align-items: center;
@@ -126,7 +127,7 @@ nav ul .nav_left {
 }
 
 .dropdown-menu li {
-  padding: 0.5rem 1rem; /* Add spacing between links */
+  padding: 0.5rem 1rem;
   border-bottom: solid 1px var(--fontBlack);
   width: 100%;
   display: flex;
