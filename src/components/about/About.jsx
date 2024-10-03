@@ -8,7 +8,7 @@ const About = () => (
     <div className="about-content">
       <div id="about-presentation">
         <span>
-          Hello
+          Hola
         </span>
         <p>
           Soy Iván Gonzalez, desarrollador Full Stack apasionado por crear aplicaciones móviles y web que impulsan negocios y transforman experiencias. Ya sea para lanzar una marca, optimizar procesos o alcanzar nuevas audiencias, mi enfoque está en diseñar soluciones tecnológicas que generen impacto real y tangible.
@@ -18,7 +18,7 @@ const About = () => (
         </p>
       </div>
       <div id="about-skills">
-        <span>Skills</span>  
+        <span>Habilidades</span>  
         <ul>
           <li>HTML</li>
           <li>CSS</li>

@@ -16,8 +16,8 @@ const Contact = () => {
       <div className="popup-container">
         <div className="popup-content">
           <p>{message}</p>
-          <span>Thank you for making contact</span>
-          <p>I will back to you as soon as possible</p>
+          <span>Gracias por ponerte en contacto.</span>
+          <p>Te responderé lo antes posible.</p>
           <button className="popup-close-btn" onClick={onClose}>
             Close
           </button>
@@ -44,7 +44,7 @@ const Contact = () => {
       setMessage('');
     } else {
       // Error
-      alert('There was an error sending your message. Please try again later.');
+      alert('Ocurrió un error al enviar tu mensaje. Por favor intenta nuevamente más tarde.');
       setSubmitting(false);
     }
   };
@@ -54,8 +54,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="contact-content">
         <div className="contact-left">
-            <span>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat,
-                    contact me directly or fill out the form and I will back to you soon.
+            <span>Siempre estoy interesado en escuchar sobre nuevos proyectos. Si te gustaría conversar, puedes contactarme directamente o llenar el formulario y te responderé pronto.
             </span>
             <div className="contact-mobile">
               <div className="mobileEmail">
@@ -68,7 +67,7 @@ const Contact = () => {
             </div>
         </div>
             <form name="submit-form" onSubmit={handleSubmit}>
-              <label htmlFor="fullName">Name</label>
+              <label htmlFor="fullName">Nombre</label>
               <input
                 type="text"
                 className="contact-input"
@@ -78,7 +77,7 @@ const Contact = () => {
                 onChange={(e) => setFullName(e.target.value)}
                 required      
             />
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Correo</label>
             <input
               type="email"
               className="contact-input"
@@ -88,23 +87,23 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               required        
             />
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensaje</label>
             <textarea
               id="message"
               className="contact-input"
               name="message"
-              placeholder="Enter your message here..."
+              placeholder="Ingresa tu mensaje aquí..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required        
             />
             <button className="contact-submit-btn" type="submit" disabled={submitting}>
-              {submitting ? 'Sending...' : 'Send Message'}
+              {submitting ? 'Enviando...' : 'Enviar Mensaje'}
             </button>
           </form>
         </div>
         <div className="contact-right">
-          <span id="contact-emailUp">EMAIL</span>
+          <span id="contact-emailUp">Correo</span>
           <span>ivan.gonzalezr224@gmail.com</span>
           <div className="contact-social">
             <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
@@ -112,7 +111,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {showPopup && <Popup message="Your message has been sent! ✔️" onClose={() => setShowPopup(false)} />}
+      {showPopup && <Popup message="Tu mensaje ha sido enviado! ✔️" onClose={() => setShowPopup(false)} />}
     </section>    
   );
 };
