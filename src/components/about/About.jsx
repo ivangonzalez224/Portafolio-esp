@@ -3,22 +3,18 @@ import '../../assets/styles/about.css';
 
 const About = () => (
   <div className="about-main" id="about">
-    <span id="about-title">ABOUT</span>
-    <span id="about-subtitle">Get to know more about me</span>
+    <span id="about-title">SOBRE MÍ</span>
+    <span id="about-subtitle">Conoce más sobre mí</span>
     <div className="about-content">
       <div id="about-presentation">
         <span>
           Hello
         </span>
         <p>
-          My name is Iván Gonzalez, and I am a pasionate Full Stack Developer who uses technology 
-          to build engaging mobile and web applications that empower businesses. Whether you&apos;re launching 
-          a new brand, streamlining operations, or reaching new audiences, 
-          I&apos;m passionate about crafting solutions that make a real difference.
+          Soy Iván Gonzalez, desarrollador Full Stack apasionado por crear aplicaciones móviles y web que impulsan negocios y transforman experiencias. Ya sea para lanzar una marca, optimizar procesos o alcanzar nuevas audiencias, mi enfoque está en diseñar soluciones tecnológicas que generen impacto real y tangible.
         </p>
         <p>
-          Let&apos;s collaborate on your next project! Drop me a line on my contact section, or 
-          let&apos;s have a coffee chat to discuss your ideas.
+          ¡Hagamos realidad tu próximo proyecto! Escríbeme en la sección de contacto o, si prefieres, podemos reunirnos para conversar sobre tus ideas y cómo puedo ayudarte a llevarlas al siguiente nivel.
         </p>
       </div>
       <div id="about-skills">
