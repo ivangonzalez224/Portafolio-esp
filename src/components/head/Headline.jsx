@@ -11,18 +11,18 @@ const Headline = () => (
         <img className="head-myPic" src={myPic} alt="My photo" />
       </div>
       <div>
-        <span id="head-hello">Hello ! </span>
+        <span id="head-hello">Hola ! </span>
         <span> 👋 </span>
       </div>
       <div>
-        <span>I am </span>
+        <span>Soy </span>
         <span id="head-name">Iván,</span>
       </div>  
       <span>
-        a software developer crafting modern and aesthetically pleasing web and mobile applications. 🚀
+        Un desarrollador de software especializado en crear aplicaciones móviles y web modernas y visualmente atractivas. 🚀
       </span>
       <span>
-      I thrive in teamwork environments and am focused on delivering exceptional user experiences across all platforms.
+        Me desenvuelvo bien en entornos colaborativos y estoy enfocado en ofrecer experiencias de usuario excepcionales en todas las plataformas.
       </span>
       <div className="head-imgDiv head-imgSocial">
         <a className="socialLinks" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer">

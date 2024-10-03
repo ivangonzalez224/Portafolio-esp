@@ -9,7 +9,7 @@ import '../../assets/styles/projects.css';
 const ProjectsList = () => {
   const dispatch = useDispatch();
   const { projectItems } = useSelector((store) => store.projects);
-  const [selectedFilter, setSelectedFilter] = useState('All');
+  const [selectedFilter, setSelectedFilter] = useState('Todo');
   useEffect(() => {
     if (projectItems.length === 0) {
       dispatch(getProjects());  
@@ -35,22 +35,22 @@ const ProjectsList = () => {
   };
 
   const filteredProjects = projectItems.filter((project) => {
-    if (selectedFilter === 'All') {
+    if (selectedFilter === 'Todo') {
       return true;
     }
     return project.filter.includes(selectedFilter);
   });
   return (
     <div className="projects-main" id="projects">
-      <h2>Latest Projects</h2>
+      <h2>Proyectos Recientes</h2>
       <div className="projects-filter">
         <button
           type="button" 
-          onClick={() => setSelectedFilter('All')}
+          onClick={() => setSelectedFilter('Todo')}
           style={{
-            backgroundColor: selectedFilter === 'All' ? '#5a79f3' : '#fff',
-            color: selectedFilter === 'All' ? '#fff' : '#181d2b',
-        }}>All</button>
+            backgroundColor: selectedFilter === 'Todo' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'Todo' ? '#fff' : '#181d2b',
+        }}>Todo</button>
         <button
           type="button"
           onClick={() => setSelectedFilter('React.js')}
