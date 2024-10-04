@@ -6,7 +6,7 @@ export const getProjects = createAsyncThunk(
   async (arg, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        'https://script.google.com/macros/s/AKfycbytsDPLXbRnw_TgRL3lo7tQkKWRJLg0QxQyogpmlSJN386OFcyCsDut8fVeOonNuJU8cA/exec',
+        'https://script.google.com/macros/s/AKfycbznOHWwzLt3FbVVTQN13F4DUPnAnxcvJHpCrfX9omuGZ7COtpjNZ3u3dOf-BSOABfIwBg/exec',
       );
       const endData = response.data.data;
       return endData;
