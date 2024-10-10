@@ -64,7 +64,6 @@ const NavBar = ({ sections }) => {
         <li onClick={toggleDropdown}>
           <a><RxHamburgerMenu /></a>
         </li>
-        
       </ul>
       <div className="dropdown-container" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
         <ul className="dropdown-menu">
