@@ -32,8 +32,8 @@ nav ul {
   display: flex;
 }
 
-#nav_cartoon img {
-  width: 120%;
+#nav_cartoon a {
+  margin-left: 5px;
 }
 
 nav ul li {
