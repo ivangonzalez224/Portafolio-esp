@@ -129,16 +129,16 @@ form label {
 .contact-social a {
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   margin: 30% 0;
 }
 
 .contact-social a:hover {
-  color: #8b9de8; /* O cualquier color que prefieras al hacer hover */
+  color: var(--backColor);
 }
 
 .contact-social a:active {
-  color: #fff;
+  color: #000;
 }
 
 .social-link:visited {
@@ -221,6 +221,10 @@ form label {
 
   .contact-social a {
     margin: 0 21% 0 0;
+  }
+
+  .contact-social a:hover {
+    color: #8b9de8;
   }
 
   .social-link:visited {
