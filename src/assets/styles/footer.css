@@ -8,6 +8,10 @@
   color: #fff;
 }
 
+footer.footer {
+  font-size: 18px;
+}
+
 .footer-social {
   list-style: none;
   display: flex;
@@ -19,7 +23,15 @@
   margin: 0 30%;
 }
 
-.footer-link:visited {
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:link,
+.footer-link:visited,
+.footer-link:hover,
+.footer-link:active {
   color: #fff;
 }
 
