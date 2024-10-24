@@ -26,11 +26,16 @@ const Contact = () => {
     );
   };
 
+  Popup.propTypes = {
+    message: PropTypes.string.isRequired,
+    onClose: PropTypes.func.isRequired,
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     // 
-    const response = await fetch('https://script.google.com/macros/s/AKfycbxCKNrr_Fdrg1OX5sq8Uf7ezhpJucaeYlaMpfDN5XzgcKeiyv3LHN3lv_vRzI3nGOQizw/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxrECoeqSBaNOnRnTmugJYOiv8kmXnByAx-1rjBao1eFuQK2yAaFfSJ85xWT5mg2vROnw/exec', {
       method: 'POST',
       body: new FormData(form)
     });
@@ -46,6 +51,9 @@ const Contact = () => {
       // Error
       alert('Ocurrió un error al enviar tu mensaje. Por favor intenta nuevamente más tarde.');
       setSubmitting(false);
+      setFullName('');
+      setEmail('');
+      setMessage('');
     }
   };
 
@@ -114,11 +122,6 @@ const Contact = () => {
       {showPopup && <Popup message="Tu mensaje ha sido enviado! ✔️" onClose={() => setShowPopup(false)} />}
     </section>    
   );
-};
-
-Contact.propTypes = {
-  message: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
 };
 
 export default Contact;
