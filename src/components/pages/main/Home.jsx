@@ -26,7 +26,7 @@ const Home = () => {
         <ProjectsList />
       </section>
       <section ref={contactRef} id="contactr">
-        <Contact/>
+        <Contact />
       </section>
     </div>
   )
