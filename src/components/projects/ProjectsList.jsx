@@ -9,7 +9,7 @@ import '../../assets/styles/projects.css';
 const ProjectsList = () => {
   const dispatch = useDispatch();
   const { projectItems } = useSelector((store) => store.projects);
-  const [selectedFilter, setSelectedFilter] = useState('Todo');
+  const [selectedFilter, setSelectedFilter] = useState('All');
   useEffect(() => {
     if (projectItems.length === 0) {
       dispatch(getProjects());  
@@ -35,22 +35,22 @@ const ProjectsList = () => {
   };
 
   const filteredProjects = projectItems.filter((project) => {
-    if (selectedFilter === 'Todo') {
+    if (selectedFilter === 'All') {
       return true;
     }
     return project.filter.includes(selectedFilter);
   });
   return (
     <div className="projects-main" id="projects">
-      <h2>Proyectos Recientes</h2>
+      <h2>Latest Projects</h2>
       <div className="projects-filter">
         <button
           type="button" 
-          onClick={() => setSelectedFilter('Todo')}
+          onClick={() => setSelectedFilter('All')}
           style={{
-            backgroundColor: selectedFilter === 'Todo' ? '#5a79f3' : '#fff',
-            color: selectedFilter === 'Todo' ? '#fff' : '#181d2b',
-        }}>Todo</button>
+            backgroundColor: selectedFilter === 'All' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'All' ? '#fff' : '#181d2b',
+        }}>All</button>
         <button
           type="button"
           onClick={() => setSelectedFilter('React.js')}
@@ -76,7 +76,29 @@ const ProjectsList = () => {
             backgroundColor: selectedFilter === 'Ruby on Rails' ? '#5a79f3' : '#fff',
             color: selectedFilter === 'Ruby on Rails' ? '#fff' : '#181d2b',
           }}
-        >Ruby on Rails</button>
+        >
+          Ruby on Rails
+        </button>
+        <button
+          type="button"
+          onClick={() => setSelectedFilter('Python')}
+          style={{
+            backgroundColor: selectedFilter === 'Python' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'Python' ? '#fff' : '#181d2b',
+          }}
+        >
+          Python
+        </button>
+        <button
+          type="button"
+          onClick={() => setSelectedFilter('PHP')}
+          style={{
+            backgroundColor: selectedFilter === 'PHP' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'PHP' ? '#fff' : '#181d2b',
+          }}
+        >
+          PHP
+        </button>
       </div>
       <div className="projects-list">
          

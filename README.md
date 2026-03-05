@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h3><b>Portafolio</b></h3>
+  <h3><b>Portfolio</b></h3>
   <h5>Ivan Gonzalez</h5> 
 </div>
 
@@ -22,15 +22,15 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Portafolio<a name="about-project"></a>
+# 📖 Portfolio<a name="about-project"></a>
 
-**Portafolio** is my a personal software developer portfolio mobile first web app built in React, Redux and CSS
+**Portfolio** is my a personal software developer portfolio mobile first web app built in React and Redux
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project I used React, Redux and CSS.
+In this project I used reac, Redux and CSS.
 <details>
   <summary>Client</summary>
   <ul>
@@ -52,7 +52,7 @@ In this project I used React, Redux and CSS.
 
  The link to the project deployed:
 
-- [Live Demo Link](https://ivangonzalezportafolio.netlify.app)
+- [Live Demo Link](https://ivangonzalezportfolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +76,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ivangonzalez224/Portafolio-esp.git
+  git clone https://github.com/ivangonzalez224/portfolio.io.git
 ```
 
 ### Install
@@ -122,6 +122,12 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project give it a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Micoverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

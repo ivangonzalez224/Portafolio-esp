@@ -32,19 +32,9 @@ nav ul {
   display: flex;
 }
 
-nav ul li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 12%;
-  padding: 0;
-}
-
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  width: 100%;
 }
 
 .dropdown-menu li a {
@@ -62,6 +52,15 @@ nav ul li a:hover {
 
 #nav_cartoon a {
   margin-left: 5px;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+  padding: 1% 4%;
 }
 
 .active {
@@ -85,7 +84,7 @@ nav ul li a:hover {
 }
 
 nav ul .nav_left {
-  width: 27px;
+  width: 25px;
   border-radius: 50px;
   justify-content: flex-start;
   align-items: center;
@@ -128,7 +127,7 @@ nav ul .nav_left {
 }
 
 .dropdown-menu li {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; /* Add spacing between links */
   border-bottom: solid 1px var(--fontBlack);
   width: 100%;
   display: flex;

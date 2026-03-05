@@ -16,19 +16,14 @@ const Contact = () => {
       <div className="popup-container">
         <div className="popup-content">
           <p>{message}</p>
-          <span>Gracias por ponerte en contacto.</span>
-          <p>Te responderé lo antes posible.</p>
+          <span>Thank you for reaching out.</span>
+          <p>Your inquiry has been received. I will review the details and get back to you shortly.</p>
           <button className="popup-close-btn" onClick={onClose}>
             Close
           </button>
         </div>
       </div>
     );
-  };
-
-  Popup.propTypes = {
-    message: PropTypes.string.isRequired,
-    onClose: PropTypes.func.isRequired,
   };
 
   const handleSubmit = async (e) => {
@@ -49,20 +44,17 @@ const Contact = () => {
       setMessage('');
     } else {
       // Error
-      alert('Ocurrió un error al enviar tu mensaje. Por favor intenta nuevamente más tarde.');
+      alert('There was an error sending your message. Please try again later.');
       setSubmitting(false);
-      setFullName('');
-      setEmail('');
-      setMessage('');
     }
   };
 
   return (
     <section className="contact-main" id="contact">
-      <h2>Contacto</h2>
+      <h2>Contact</h2>
       <div className="contact-content">
         <div className="contact-left">
-            <span>Siempre estoy interesado en escuchar sobre nuevos proyectos. Si te gustaría conversar, puedes contactarme directamente o llenar el formulario y te responderé pronto.
+            <span>I&apos;m currently open to new opportunities and technical collaborations. If you have a project in mind or just want to discuss software solutions, feel free to reach out. I&apos;ll review your message and get back to you within 24 hours.
             </span>
             <div className="contact-mobile">
               <div className="mobileEmail">
@@ -75,7 +67,7 @@ const Contact = () => {
             </div>
         </div>
             <form name="submit-form" onSubmit={handleSubmit}>
-              <label htmlFor="fullName">Nombre</label>
+              <label htmlFor="fullName">Name</label>
               <input
                 type="text"
                 className="contact-input"
@@ -85,7 +77,7 @@ const Contact = () => {
                 onChange={(e) => setFullName(e.target.value)}
                 required      
             />
-            <label htmlFor="email">Correo</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               className="contact-input"
@@ -95,23 +87,23 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               required        
             />
-            <label htmlFor="message">Mensaje</label>
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               className="contact-input"
               name="message"
-              placeholder="Ingresa tu mensaje aquí..."
+              placeholder="Tell me about your project or inquiry..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required        
             />
             <button className="contact-submit-btn" type="submit" disabled={submitting}>
-              {submitting ? 'Enviando...' : 'Enviar Mensaje'}
+              {submitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
         </div>
         <div className="contact-right">
-          <span id="contact-emailUp">Correo</span>
+          <span id="contact-emailUp">EMAIL</span>
           <span>ivan.gonzalezr224@gmail.com</span>
           <div className="contact-social">
             <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
@@ -119,9 +111,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {showPopup && <Popup message="Tu mensaje ha sido enviado! ✔️" onClose={() => setShowPopup(false)} />}
+      {showPopup && <Popup message="Message Sent Successfully! ✔️" onClose={() => setShowPopup(false)} />}
     </section>    
   );
+};
+
+Contact.propTypes = {
+  message: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Contact;

@@ -19,19 +19,25 @@
 }
 
 .projects-filter {
-  width: 80%;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  gap: 3%;
-  margin-bottom: 3%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .projects-filter button {
   border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: 500;
 }
 
 .projects-filter button:focus {
@@ -59,12 +65,12 @@
 
 #itemProjectBtn {
   width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
-  background-color: #000000bd;
-  padding: 0;
 }
 
 #itemContent {
@@ -72,6 +78,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  transition: filter 0.3s ease;
 }
 
 #itemContent p {
@@ -84,31 +91,39 @@
   border: #fff solid 1px;
   color: #fff;
   font-size: 14px;
-  padding: 1% 2%;
+  padding: 1% 3%;
 }
 
 #backProjectItem {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .react-multi-carousel-list li:hover {
-  padding: 0;
 
   #backProjectItem {
     display: flex;
   }
 
   #itemContent {
-    display: none;
+    filter: blur(2px);
   }
 }
 
 .project-item {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .itemProjectSource {
@@ -143,10 +158,34 @@
   margin-top: auto;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
   padding: 0;
+}
+
+.project-credentials {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed #738bee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.project-credentials p {
+  margin: 0;
+  font-size: 12px;
+  color: #738bee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-credentials span {
+  font-size: 13px;
+  color: #fff !important;
+  font-family: monospace; /* Para que parezca código/acceso */
 }
 
 .react-multiple-carousel__arrow {
@@ -162,15 +201,28 @@
 }
 
 @media only screen and (max-width: 765px) {
+  .projects-filter {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 20px;
+    gap: 10px;
+    scrollbar-width: none;
+  }
+
+  .projects-filter::-webkit-scrollbar {
+    display: none;
+  }
+
   .projects-filter button {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 6px 14px;
+    flex-shrink: 0;
   }
 
   .projects-list {
-    width: 97%;
-    display: flex;
-    justify-content: center;
+    width: 95%;
   }
 
   .react-multi-carousel-list li {
