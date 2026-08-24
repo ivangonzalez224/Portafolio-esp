@@ -16,10 +16,10 @@ const Contact = () => {
       <div className="popup-container">
         <div className="popup-content">
           <p>{message}</p>
-          <span>Thank you for reaching out.</span>
-          <p>Your inquiry has been received. I will review the details and get back to you shortly.</p>
+          <span>Gracias por contactarme.</span>
+          <p>Tu mensaje fue recibido. Revisaré los detalles y te responderé a la brevedad.</p>
           <button className="popup-close-btn" onClick={onClose}>
-            Close
+            Cerrar
           </button>
         </div>
       </div>
@@ -51,31 +51,34 @@ const Contact = () => {
 
   return (
     <section className="contact-main" id="contact">
-      <h2>Contact</h2>
+      <h2>Contacto</h2>
       <div className="contact-content">
         <div className="contact-left">
-            <span>I&apos;m currently open to new opportunities and technical collaborations. If you have a project in mind or just want to discuss software solutions, feel free to reach out. I&apos;ll review your message and get back to you within 24 hours.
-            </span>
-            <div className="contact-mobile">
-              <div className="mobileEmail">
-                <span id="contact-emailUp">EMAIL</span>
-                <span>ivan.gonzalezr224@gmail.com</span>
-              </div>
-              <div className="contact-social">
-                <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
-                <a className="social-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer"><BsGithub /></a>
+          <span>
+            Estoy disponible para nuevos proyectos y colaboraciones técnicas. 
+            Si tienes algo en mente o simplemente quieres conversar sobre una idea, 
+            escríbeme. Te respondo en menos de 24 horas.
+          </span>
+          <div className="contact-mobile">
+            <div className="mobileEmail">
+              <span id="contact-emailUp">EMAIL</span>
+              <span>ivan.gonzalezr224@gmail.com</span>
             </div>
-        </div>
-            <form name="submit-form" onSubmit={handleSubmit}>
-              <label htmlFor="fullName">Name</label>
-              <input
-                type="text"
-                className="contact-input"
-                id="fullName"
-                name="fullName"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                required      
+            <div className="contact-social">
+              <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+              <a className="social-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer"><BsGithub /></a>
+            </div>
+          </div>
+          <form name="submit-form" onSubmit={handleSubmit}>
+            <label htmlFor="fullName">Nombre</label>
+            <input
+              type="text"
+              className="contact-input"
+              id="fullName"
+              name="fullName"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              required
             />
             <label htmlFor="email">Email</label>
             <input
@@ -85,20 +88,20 @@ const Contact = () => {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required        
+              required
             />
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensaje</label>
             <textarea
               id="message"
               className="contact-input"
               name="message"
-              placeholder="Tell me about your project or inquiry..."
+              placeholder="Cuéntame sobre tu proyecto o consulta..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              required        
+              required
             />
             <button className="contact-submit-btn" type="submit" disabled={submitting}>
-              {submitting ? 'Sending...' : 'Send Message'}
+              {submitting ? 'Enviando...' : 'Enviar Mensaje'}
             </button>
           </form>
         </div>
@@ -111,8 +114,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {showPopup && <Popup message="Message Sent Successfully! ✔️" onClose={() => setShowPopup(false)} />}
-    </section>    
+      {showPopup && <Popup message="¡Mensaje enviado con éxito! ✔️" onClose={() => setShowPopup(false)} />}
+    </section>
   );
 };
 
