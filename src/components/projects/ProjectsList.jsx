@@ -42,7 +42,7 @@ const ProjectsList = () => {
   });
   return (
     <div className="projects-main" id="projects">
-      <h2>Latest Projects</h2>
+      <h2>Proyectos Destacados</h2>
       <div className="projects-filter">
         <button
           type="button" 
@@ -50,7 +50,7 @@ const ProjectsList = () => {
           style={{
             backgroundColor: selectedFilter === 'All' ? '#5a79f3' : '#fff',
             color: selectedFilter === 'All' ? '#fff' : '#181d2b',
-        }}>All</button>
+        }}>Todos</button>
         <button
           type="button"
           onClick={() => setSelectedFilter('React.js')}

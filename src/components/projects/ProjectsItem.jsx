@@ -37,7 +37,7 @@ const ProjectsItem = ({
         </button>
         {backImg && (
           <div className="project-credentials">
-            <p><strong>Demo Access:</strong></p>
+            <p><strong>Acceso Demo:</strong></p>
             <span>{backImg}</span>
           </div>
         )}
