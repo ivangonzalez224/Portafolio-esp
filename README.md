@@ -51,7 +51,7 @@ In this project I used reac, Redux and CSS.
 
  The link to the project deployed:
 
-- [Live Demo Link](https://ivangonzalezportfolio.netlify.app/)
+- [Live Demo Link](https://ivangonzalezportafolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
