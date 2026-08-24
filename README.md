@@ -19,7 +19,6 @@
 - [🛩️ Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 # 📖 Portfolio<a name="about-project"></a>
@@ -122,12 +121,6 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project give it a star.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Micoverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
