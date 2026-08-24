@@ -34,6 +34,7 @@ const NavBar = ({ sections }) => {
       observer.disconnect();
     };
   }, [sections]);
+
   return (
     <nav>
       <ul id="nav_name">
@@ -48,51 +49,51 @@ const NavBar = ({ sections }) => {
       </ul>
       <ul id="nav-rigth">
         <li>
-          <a href="#home" onClick={() => setActiveLink('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a>
+          <a href="#home" onClick={() => setActiveLink('home')} className={activeLink === 'home' ? 'active' : ''}>Inicio</a>
         </li>
         <li>
-          <a href="#about" onClick={() => setActiveLink('about')} className={activeLink === 'about' ? 'active' : ''}>About</a>
+          <a href="#about" onClick={() => setActiveLink('about')} className={activeLink === 'about' ? 'active' : ''}>Sobre mí</a>
         </li>
         <li>
-          <a href="#projects" onClick={() => setActiveLink('projects')} className={activeLink === 'projects' ? 'active' : ''}>Projects</a>
+          <a href="#projects" onClick={() => setActiveLink('projects')} className={activeLink === 'projects' ? 'active' : ''}>Proyectos</a>
         </li>
         <li>
-          <a href="#contact" onClick={() => setActiveLink('contact')} className={activeLink === 'contact' ? 'active' : ''}>Contact</a>
+          <a href="#contact" onClick={() => setActiveLink('contact')} className={activeLink === 'contact' ? 'active' : ''}>Contacto</a>
         </li>
       </ul>
       <ul id="nav-ham">
         <li onClick={toggleDropdown}>
           <a><RxHamburgerMenu /></a>
         </li>
-        
       </ul>
       <div className="dropdown-container" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
         <ul className="dropdown-menu">
           <li id="dropdown-top">
-            <img src={myPhoto}></img>
+            <img src={myPhoto} alt="Iván Gonzalez" />
             <button onClick={toggleDropdown}><VscChromeClose /></button>
           </li>
           <li>
-            <a href="#home" onClick={toggleDropdown}><TbHome className="drop-icon"/> Home</a>
+            <a href="#home" onClick={toggleDropdown}><TbHome className="drop-icon"/> Inicio</a>
           </li>
           <li>
-            <a href="#about" onClick={toggleDropdown}><TbInfoSquareRounded className="drop-icon"/> About</a>
+            <a href="#about" onClick={toggleDropdown}><TbInfoSquareRounded className="drop-icon"/> Sobre mí</a>
           </li>
           <li>
-            <a href="#projects" onClick={toggleDropdown}><GrProjects className="drop-icon"/> Projects</a>
+            <a href="#projects" onClick={toggleDropdown}><GrProjects className="drop-icon"/> Proyectos</a>
           </li>
           <li>
-            <a href="#contact" onClick={toggleDropdown}><GrContact className="drop-icon"/> Contact</a>
+            <a href="#contact" onClick={toggleDropdown}><GrContact className="drop-icon"/> Contacto</a>
           </li>
           <li>
           </li>
         </ul>
-      </div>  
+      </div>
     </nav>
-  )
+  );
 };
 
 NavBar.propTypes = {
   sections: PropTypes.array,
 };
+
 export default NavBar;
