@@ -5,7 +5,7 @@ import '../assets/styles/footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; {new Date().getFullYear()} Iván Gonzalez | Full Stack Engineer</p>
+      <p>&copy; {new Date().getFullYear()} Iván Gonzalez | Ingeniero Full Stack Senior</p>
       <ul className="footer-social">
         <li><a className="footer-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a></li>
         <li><a className="footer-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noopener noreferrer"><BsGithub /></a></li>
@@ -13,7 +13,7 @@ const Footer = () => {
       <p id="footer-mail">
         <a href="mailto:ivan.gonzalezr224@gmail.com">
           <MdEmail />
-          <span className="contact-text">&nbsp;&nbsp;Get in touch</span>
+          <span className="contact-text">&nbsp;&nbsp;Escríbeme</span>
         </a>
       </p>
     </footer>
