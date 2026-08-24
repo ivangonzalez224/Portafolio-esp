@@ -11,18 +11,20 @@ const Headline = () => (
         <img className="head-myPic" src={myPic} alt="My photo" />
       </div>
       <div>
-        <span id="head-hello">Hello ! </span>
+        <span id="head-hello">¡Hola! </span>
         <span> 👋 </span>
       </div>
       <div>
-        <span>I am </span>
+        <span>Soy </span>
         <span id="head-name">Iván Gonzalez,</span>
       </div>  
       <span>
-        a <strong>Senior Full Stack Engineer</strong> & <strong>Product Developer</strong> crafting high-performance AI-driven mobile and web applications. 🚀
+        <strong>Ingeniero Full Stack Senior</strong> & <strong>Desarrollador de Producto</strong> — construyo aplicaciones móviles y web de alto rendimiento impulsadas por IA. 🚀
       </span>
       <span>
-        I specialize in building scalable architectures and leading technical projects with a focus on delivering exceptional user experiences and robust backend solutions.
+        Me especializo en arquitecturas escalables y productos digitales end-to-end, 
+        combinando una sólida ingeniería backend con experiencias móviles que los usuarios 
+        realmente disfrutan.
       </span>
       <div className="head-imgDiv head-imgSocial">
         <a className="socialLinks" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer">
